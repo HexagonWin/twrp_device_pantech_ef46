@@ -17,12 +17,17 @@ CPU     | 1.5GHz Dual-Core MSM8960
 GPU     | Adreno 225
 Memory  | 1GB RAM
 Board   | Pantech MSM8960
-Shipped Android Version | 4.0.4
+Shipped Android Version | 4.1.2
 Storage | 16GB
 Battery | 2100 mAh
 Display | 5.0" 1280 x 720 px
 Camera  | 13MPx, LED Flash
+Shipped Kernel Version | Linux 3.4.0
 
-![Pantech SKY VEGA S5](http://w.namu.la/s/9889bad9bc094f5bfe2f58ac174fa70b91c923c52f5a9e51876ea7801915eb2dd3166641266de441cbedaf948693d594325c1645567a21e7bb02346d47d1b3fad6651b88f6d945b2d70a73feed13fa002236960f7e2ecff954ce601b390d1904a355685af2a7ee6fce91804785ed6d3e "VEGA S5 black")
+![SKY VEGA S5 White](https://github.com/HexagonWin/twrp_device_pantech_ef44/blob/android-5.1/device.jpg)
 
 This branch is for building TWRP Recovery only.
+
+=============
+Working : Brightness change, touch, backup, install, adb sideload
+Not work : vibrator, f2fs, adb logcat/shell etc adb function, mtp
