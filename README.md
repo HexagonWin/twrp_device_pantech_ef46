@@ -28,6 +28,7 @@ Shipped Kernel Version | Linux 3.4.0
 
 This branch is for building TWRP Recovery only.
 
+Functions
 =============
 Working : Brightness change, touch, backup, install, adb sideload
 Not work : vibrator, f2fs, adb logcat/shell etc adb function, mtp
