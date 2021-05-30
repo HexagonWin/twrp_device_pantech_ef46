@@ -31,4 +31,6 @@ This branch is for building TWRP Recovery only.
 Functions
 =============
 Working : Brightness change, touch, backup, install, adb sideload
-Not work : vibrator, f2fs, adb logcat/shell etc adb function, mtp
+Not work : vibrator, f2fs, adb logcat/shell etc adb function, mtp, Currently the created image is so big to fit the partition size.
+
+Credits to : AdrianDC (Original works for sony blue family devices), gabrielgagz (custom mkbootimg.mk), 축구천재 (from SDA), 남생이 (from SDA), Alteration (from SDA), 985hPaKicK, hiru (rlawoehd187), PANTECH CORP!
