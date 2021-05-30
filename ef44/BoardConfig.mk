@@ -60,3 +60,5 @@ TW_HAS_NO_RECOVERY_PARTITION := true
 TW_MAX_BRIGHTNESS := 255
 TW_NO_SCREEN_BLANK := true
 TW_THEME := portrait_hdpi
+
+#BOARD_HAS_VIBRATOR_IMPLEMENTATION := device/pantech/ef44/vibrator/vibrator.c
