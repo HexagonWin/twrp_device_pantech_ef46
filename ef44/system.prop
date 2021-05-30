@@ -3,3 +3,5 @@ telephony.lteOnGsmDevice=1
 
 # Graphics
 ro.sf.lcd_density=320
+
+persist.sys.usb.config=mtp,adb
