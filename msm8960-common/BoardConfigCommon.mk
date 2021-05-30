@@ -32,6 +32,8 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 TARGET_BOARD_PLATFORM := msm8960
 
 # Kernel information
+BOARD_CUSTOM_BOOTIMG_MK := device/pantech/ef44/mkbootimg.mk
+
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom androidboot.carrier=SKT-KOR user_debug=31 msm_rtb.filter=0x3F kgsl.mmutype=gpummu androidboot.emmc=true
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -148,4 +150,6 @@ SOMC_CFG_SENSORS_COMPASS_AK8972 := yes
 #    updatemiscta.te
 
 # inherit from the proprietary version
--include vendor/pantech/msm8960-common/BoardConfigVendor.mk
+#-include vendor/pantech/msm8960-common/BoardConfigVendor.mk
+
+LZMA_RAMDISK_TARGETS := recovery

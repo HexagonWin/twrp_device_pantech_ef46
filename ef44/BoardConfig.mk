@@ -62,3 +62,5 @@ TW_NO_SCREEN_BLANK := true
 TW_THEME := portrait_hdpi
 
 #BOARD_HAS_VIBRATOR_IMPLEMENTATION := device/pantech/ef44/vibrator/vibrator.c
+LZMA_RAMDISK_TARGETS := recovery
+
