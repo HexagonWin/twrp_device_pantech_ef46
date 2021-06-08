@@ -24,7 +24,7 @@ Display | 5.0" 1280 x 720 px
 Camera  | 13MPx, LED Flash
 Shipped Kernel Version | Linux 3.4.0
 
-![SKY VEGA S5 White](https://github.com/HexagonWin/twrp_device_pantech_ef44/blob/android-5.1/device.jpg)
+![SKY VEGA S5 White](https://github.com/HexagonWin/twrp_device_pantech_ef44/blob/android-5.1/ef44/device.jpg)
 
 This branch is for building TWRP Recovery only.
 
