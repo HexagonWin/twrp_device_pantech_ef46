@@ -1,5 +1,18 @@
+###################################################################################
+#                                                                                 #
+#,--.   ,--.,---.  ,-----.       ,--.   ,--.                                      #
+# \  `.'  /'   .-' |  .--',-----.|  |   `--',--,--,  ,---.  ,--,--. ,---.  ,---.  #
+#  \     / `.  `-. '--. `\'-----'|  |   ,--.|      \| .-. :' ,-.  || .-. || .-. : #
+#   \   /  .-'    |.--'  /       |  '--.|  ||  ||  |\   --.\ '-'  |' '-' '\   --. #
+#    `-'   `-----' `----'        `-----'`--'`--''--' `----' `--`--'.`-  /  `----' #
+#                                                                  `---'          #
+#              Copyright (c) 2021 HexagonWin, VS5-Lineage Project                 #
+#            Please check the README for credits and more information.            #
+#                      Licensed under the Apache License 2.0.                     #
+###################################################################################
+
 #
-# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +26,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Inherit the msm8960-common definitions
-$(call inherit-product, device/pantech/msm8960-common/msm8960.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/pantech/ef44/overlay
 
@@ -45,10 +55,12 @@ PRODUCT_COPY_FILES += \
     device/pantech/ef44/ramdisk/ueventd.rc:root/ueventd.rc \
     device/pantech/ef44/ramdisk/initlogo.rle:root/initlogo.rle
 
-PRODUCT_COPY_FILES += \
-    device/pantech/ef44/idc/qt602240_ts_input.idc:system/usr/idc/qt602240_ts_input.idc
+# Set default USB interface
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb
+
+# USB OTG support
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=true
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-# Include non-opensource parts
-#$(call inherit-product, vendor/pantech/ef44/ef44-vendor.mk)

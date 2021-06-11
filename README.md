@@ -1,15 +1,15 @@
-Copyright 2016 - The CyanogenMod Project
-Copyright 2017 - The LineageOS Project
+Copyright 2016 - The CyanogenMod Project  
+Copyright 2017 - The LineageOS Project  
 Copyright 2021 - HexagonWin
 
-Pantech MSM8960 TWRP
+Pantech SKY VEGA S5
 =============
 
-This tree supports two devices, the Pantech VEGA S5 (ef44) and the Pantech VEGA Racer 2 (ef46).
-Both has an msm8960 processor, 1gb of ram. They are similar to the Sony blue family devices, and so this twrp is also based on that.
+The Pantech VEGA S5 (codenamed _"EF44"_) is a mid-range smartphone from Pantech Wireless.
+
+It was announced on 2012.
 
 EF44 was unofficially supported in CyanogenMod 10.
-EF46 was unofficially supported in CyanogenMod 9,10,10.1,10.2,11,12.0.
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -19,14 +19,18 @@ Memory  | 1GB RAM
 Board   | Pantech MSM8960
 Shipped Android Version | 4.1.2
 Storage | 16GB
-Display | 1280 x 720 px IPS-LCD
+Battery | 2100 mAh
+Display | 5.0" 1280 x 720 px
+Camera  | 13MPx, LED Flash
 Shipped Kernel Version | Linux 3.4.0
+
+![SKY VEGA S5 White](https://github.com/HexagonWin/twrp_device_pantech_ef44/blob/android-5.1/ef44/device.jpg)
 
 This branch is for building TWRP Recovery only.
 
-Credits
+Functions
 =============
+Working : Brightness change, touch, backup, install, adb sideload
+Not work : vibrator, f2fs, adb logcat/shell etc adb function, mtp
+
 Credits to : AdrianDC (Original works for sony blue family devices), gabrielgagz (custom mkbootimg.mk), 축구천재 (from SDA), 남생이 (from SDA), Alteration (from SDA), 985hPaKicK, hiru (rlawoehd187), PANTECH CORP!
-
-
-
