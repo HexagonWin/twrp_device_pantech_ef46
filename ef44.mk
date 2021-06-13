@@ -48,8 +48,6 @@ PRODUCT_COPY_FILES += \
     device/pantech/ef44/ramdisk/init.qcom.rc:root/init.qcom.rc \
     device/pantech/ef44/ramdisk/init.target.rc:root/init.target.rc \
     device/pantech/ef44/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-    device/pantech/ef44/ramdisk/init.pantech.usb.rc:root/init.pantech.usb.rc \
-    device/pantech/ef44/ramdisk/init.pantech.usb.sh:root/init.pantech.usb.sh \
     device/pantech/ef44/ramdisk/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
     device/pantech/ef44/ramdisk/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
     device/pantech/ef44/ramdisk/ueventd.rc:root/ueventd.rc \

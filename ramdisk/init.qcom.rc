@@ -27,8 +27,8 @@
 
 # For pantech usb_manager composite configuration
 # idVendor, idProducr, each function configuration and enable/disable is configured usb_manager.c in pantech framework.
-#import init.qcom.usb.rc
-import /init.pantech.usb.rc
+import init.qcom.usb.rc
+#import /init.pantech.usb.rc
 
 on early-init
     mkdir /mnt 0775 root system
