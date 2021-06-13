@@ -39,7 +39,7 @@ DEVICE_PACKAGE_OVERLAYS += device/pantech/ef44/overlay
 # if the xhdpi doesn't exist.
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+#PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_LOCALES += en_US
 
 # Boot ramdisk setup
@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb
+    persist.sys.usb.config=adb,mtp
 
 # USB OTG support
 PRODUCT_PROPERTY_OVERRIDES += \
