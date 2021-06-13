@@ -54,8 +54,8 @@ PRODUCT_COPY_FILES += \
     device/pantech/ef44/ramdisk/initlogo.rle:root/initlogo.rle
 
 # Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=adb,mtp
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    persist.sys.usb.config=adb,mtp
 
 # USB OTG support
 PRODUCT_PROPERTY_OVERRIDES += \
