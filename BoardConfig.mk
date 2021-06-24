@@ -27,16 +27,16 @@
 # limitations under the License.
 #
 
-TARGET_SPECIFIC_HEADER_PATH += device/pantech/ef44/include
+TARGET_SPECIFIC_HEADER_PATH += device/pantech/ef46/include
 
 # Kernel related things.
-TARGET_KERNEL_CONFIG := Lineage_ef44_defconfig
-TARGET_PREBUILT_KERNEL := device/pantech/ef44/prebuilts/kernel
+TARGET_KERNEL_CONFIG := Lineage_ef46_defconfig
+TARGET_PREBUILT_KERNEL := device/pantech/ef46/prebuilts/kernel
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom androidboot.carrier=SKT-KOR user_debug=31 msm_rtb.filter=0x3F kgsl.mmutype=gpummu androidboot.emmc=true
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom androidboot.carrier=LGT-KOR user_debug=31 msm_rtb.filter=0x3F loglevel=0 androidboot.emmc=true
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_FORCE_RAMDISK_ADDRESS := 0x81600000
+BOARD_FORCE_RAMDISK_ADDRESS := 0x82400000
 
 # Board, AP etc things.
 TARGET_ARCH := arm
@@ -44,7 +44,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-TARGET_KERNEL_SOURCE := kernel/pantech/ef44
+TARGET_KERNEL_SOURCE := kernel/pantech/msm8960_akernelplus
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 TARGET_BOARD_PLATFORM := msm8960
@@ -69,7 +69,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # TWRP configurations
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_FSTAB := device/pantech/ef44/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/pantech/ef46/recovery.fstab
+#Brightness file is from ef44. Change after getting ef46 correct values
 TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.524801/leds/lcd-backlight/brightness
 TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,barrier=1,noauto_da_alloc,discard"
@@ -93,5 +94,5 @@ TW_THEME := portrait_hdpi
 LZMA_RAMDISK_TARGETS := recovery
 
 # Boot image related things.
-BOARD_CUSTOM_BOOTIMG_MK := device/pantech/ef44/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/pantech/ef46/mkbootimg.mk
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x2000000

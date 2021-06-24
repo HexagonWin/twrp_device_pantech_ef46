@@ -27,7 +27,7 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/pantech/ef44/overlay
+DEVICE_PACKAGE_OVERLAYS += device/pantech/ef46/overlay
 
 # These are the hardware-specific features
 #PRODUCT_COPY_FILES += \
@@ -44,14 +44,14 @@ PRODUCT_LOCALES += en_US
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
-    device/pantech/ef44/ramdisk/init.rc:root/init.rc \
-    device/pantech/ef44/ramdisk/init.qcom.rc:root/init.qcom.rc \
-    device/pantech/ef44/ramdisk/init.target.rc:root/init.target.rc \
-    device/pantech/ef44/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-    device/pantech/ef44/ramdisk/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
-    device/pantech/ef44/ramdisk/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
-    device/pantech/ef44/ramdisk/ueventd.rc:root/ueventd.rc \
-    device/pantech/ef44/ramdisk/initlogo.rle:root/initlogo.rle
+    device/pantech/ef46/ramdisk/init.rc:root/init.rc \
+    device/pantech/ef46/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/pantech/ef46/ramdisk/init.target.rc:root/init.target.rc \
+    device/pantech/ef46/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/pantech/ef46/ramdisk/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
+    device/pantech/ef46/ramdisk/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
+    device/pantech/ef46/ramdisk/ueventd.rc:root/ueventd.rc \
+    device/pantech/ef46/ramdisk/initlogo.rle:root/initlogo.rle
 
 # Set default USB interface
 #PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
