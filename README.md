@@ -23,7 +23,7 @@ Display | 1280 x 720 px
 Camera  | Pantech Camera module, LED Flash
 Shipped Kernel Version | Linux 3.4.0
 
-![SKY VEGA Racer2](https://github.com/HexagonWin/twrp_device_pantech_ef46/blob/android-5.1/device.jpg)
+![SKY VEGA Racer2](https://github.com/HexagonWin/twrp_device_pantech_ef46/blob/android-5.1/device.jpeg)
 
 This branch is for building TWRP Recovery only.
 
